@@ -1,0 +1,27 @@
+{
+    "name": "mintware-de/rotation-logger",
+    "description": "A PSR-3 implementation with rotation support.",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MintwareDe\\RotationLogger\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Julian Finkler",
+            "email": "julian@mintware.de"
+        }
+    ],
+    "minimum-stability": "stable"
+}

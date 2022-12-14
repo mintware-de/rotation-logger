@@ -11,10 +11,21 @@
         "friendsofphp/php-cs-fixer": "^3.13",
         "phpunit/phpunit": "^9.5"
     },
+    "scripts": {
+        "fix-cs": "php-cs-fixer fix",
+        "fix-cs:ci": "php-cs-fixer fix --stop-on-violation --dry-run",
+        "analyse": "phpstan analyse",
+        "test": "phpunit"
+    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "MintwareDe\\RotationLogger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MintwareDe\\Tests\\RotationLogger\\": "tests/"
         }
     },
     "authors": [

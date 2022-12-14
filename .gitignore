@@ -3,3 +3,4 @@ composer.lock
 .phpunit.cache/
 .idea/
 .php-cs-fixer.cache
+/tmp/

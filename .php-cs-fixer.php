@@ -11,6 +11,7 @@ $config = new PhpCsFixer\Config();
 return $config
     ->setRules([
         '@PSR12' => true,
+        'phpdoc_align' => true,
         'array_syntax' => ['syntax' => 'short'],
     ])
     ->setFinder($finder);

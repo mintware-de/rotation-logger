@@ -12,18 +12,6 @@ use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\AbstractLogger;
 
-/**
- * Rotation logik:
- * - pro tag?
- * - maximale größe (Bytes)
- * - maximale größe (Zeilen)
- * - maximale Anzahl an logs
- * - logs älter als X Tage löschen?
- *
- * Schreib Logik:
- * - Wenn max. Dateigröße erreicht wurde:
- *   - Hard cut oder Zeile fertig schreiben
- */
 class RotationLoggerTest extends TestCase
 {
     private RotationLogger $logger;
